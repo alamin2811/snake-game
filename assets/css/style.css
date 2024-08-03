@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.game-container {
+    position: relative;
+}
+
+#gameCanvas {
+    border: 5px solid #080014;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.controls {
+    margin-top: -10px;
+    background: #080014;
+    min-height: 120px;
+    padding: 50px;
+    padding-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.up-down-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: -100px;
+}
+.pause-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 40%;
+}
+
+.reload-btn{
+    position: absolute;
+    bottom: 20px;
+    width: 40%;
+    right: 5%;
+}
+
+.left-right-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: -100px;
+}
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: #0056b3;
+}
