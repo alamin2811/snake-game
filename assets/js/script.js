@@ -127,7 +127,7 @@ $(document).ready(function() {
         ctx.fillRect(food.x, food.y, gridSize, gridSize);
 
         // Draw score
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = 'white';
         ctx.font = '20px Arial';
         ctx.fillText('Score: ' + score, 10, 20);
     }
