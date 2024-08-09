@@ -39,6 +39,23 @@ $(document).ready(function() {
                     break;
             }
         });
+
+        // Button click handlers for mobile controls
+        $('#up').click(function() {
+            if (direction !== 'DOWN') direction = 'UP';
+        });
+        
+        $('#down').click(function() {
+            if (direction !== 'UP') direction = 'DOWN';
+        });
+        
+        $('#left').click(function() {
+            if (direction !== 'RIGHT') direction = 'LEFT';
+        });
+        
+        $('#right').click(function() {
+            if (direction !== 'LEFT') direction = 'RIGHT';
+        });
         
         $('#pauseBtn').click(function() {
             togglePause();
