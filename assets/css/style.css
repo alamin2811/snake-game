@@ -5,17 +5,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+    padding: 0px 10px;
     background-color: #121212;
 }
 
 .game-container {
     position: relative;
+    height: 100vh;
+    padding-top: 5vh;
+    overflow: hidden;
 }
 
 #gameCanvas {
     border: 5px solid #080014;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8px);
+    max-width: 340px;
+    width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -32,6 +39,7 @@ body {
     flex-direction: column;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    position: relative;
 }
 
 .up-down-btn{
